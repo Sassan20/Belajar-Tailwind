@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -30,13 +30,16 @@
   </h1>
   <div class="w-1/2 mx-auto">
     <h1 class="text-3xl font-semibold my-6">Belajar Mengenai Tailwind Bersama Pak Dika </h1>
-    <p>By <a href="#" class="text-black font-semibold underline hover:text-blue-600 cursor-pointer dark:text-slate-200">Muhammad Fadil,</a>
+    <p>By <a href="#"
+        class="text-black font-semibold underline hover:text-blue-600 cursor-pointer dark:text-slate-200">Muhammad
+        Fadil,</a>
       15 Mei 2023</p>
     <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur iste quasi error voluptates esse
       vel ducimus sequi natus placeat, consequuntur ab neque, illum iure possimus autem! Quis ab optio officia repellat
       unde praesentium, atque corrupti necessitatibus? Sed consequatur laudantium, labore culpa eius modi, corporis
       ratione facilis nobis repudiandae sit. Fugiat?</p>
-    <blockquote class="mt-2 italic font-thin text-slate-950 dark:text-slate-200">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, et?"
+    <blockquote class="mt-2 italic font-thin text-slate-950 dark:text-slate-200">"Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Corporis, et?"
     </blockquote>
     <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero consequuntur error cupiditate
       eius. Expedita, dolor nemo. Officia fugit dolores, itaque esse maiores ipsa? Doloribus quia soluta dicta neque
@@ -44,7 +47,7 @@
       voluptates laboriosam facere alias, provident officiis! Provident, consequatur.</p>
   </div>
   <div
-    class="w-72 h-72 bg-slate-500 my-5 mx-auto rounded-lg overflow-y-scroll bg-cover bg-fixed border-4 border-slate-500 blur-sm hover:blur-none"
+    class="max-w-lg bg-slate-500 my-5 mx-auto rounded-lg overflow-y-scroll bg-cover bg-fixed border-4 border-slate-500 blur-sm hover:blur-none"
     style="background-image: url('/Src/Img/andrea.jpg');">
     <p class="text-white p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, odit vero adipisci facilis
       cum sunt. Vero fugiat aut illum voluptate placeat. Quas praesentium soluta impedit veniam voluptas sapiente magni
@@ -60,25 +63,51 @@
   </div>
   <button
     class="bg-sky-600 my-10 px-5 py-1 rounded-full text-white font-semibold mx-auto block hover:bg-sky-700 active:bg-sky-900 focus:border-2 focus:border-sky-400 dark:bg-slate-600 dark:hover:bg-slate-700 dark:active:bg-slate-800 dark:focus:border-2 dark:focus:border-slate-200">Simpan</button>
-  <div class="max-w-lg border border-slate-200 mx-auto p-5 rounded-xl shadow-md hover:bg-sky-500 dark:hover:bg-slate-300 group">
+  <div
+    class="max-w-lg border border-slate-200 mx-auto p-5 rounded-xl shadow-md hover:bg-sky-500 dark:hover:bg-slate-300 group">
     <h5 class="font-bold mb-3 group-hover:text-white dark:group-hover:text-slate-900">My Card</h5>
-    <p class="group-hover:text-white dark:group-hover:text-slate-900 selection:bg-lime-400 selection:text-slate-900 font-serif first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatum veniam fugit repellendus accusamus adipisci sapiente quibusdam iste, ipsa odio architecto ab consequuntur similique, quae mollitia, harum optio accusantium cumque neque cum possimus! Consequatur dolor, laborum reprehenderit praesentium facere accusantium?</p>
+    <p
+      class="group-hover:text-white dark:group-hover:text-slate-900 selection:bg-lime-400 selection:text-slate-900 font-serif first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatum veniam fugit repellendus
+      accusamus adipisci sapiente quibusdam iste, ipsa odio architecto ab consequuntur similique, quae mollitia, harum
+      optio accusantium cumque neque cum possimus! Consequatur dolor, laborum reprehenderit praesentium facere
+      accusantium?</p>
   </div>
   <div class="max-w-lg border border-slate-200 shadow p-5 mx-auto my-10 rounded-xl">
     <form action="email">
       <span class=" font-semibold block mb-1 after:content-['*'] after:text-pink-700 after:ml-0.5">Email</span>
       <label for="email"></label>
-      <input id="email" placeholder="Masukkan Email..." class="px-3 py-2 border shadow rounded-xl w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer" type="email">
+      <input id="email" placeholder="Masukkan Email..."
+        class="px-3 py-2 border shadow rounded-xl w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer"
+        type="email">
       <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email Tidak Valid</p>
     </form>
   </div>
+  <div
+    class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 transition hover:scale-125 hover:translate-x-40 hover:rotate-45 hover:bg-purple-700 rounded-lg">
+  </div>
+  <div class="w-[100px] h-[100px] mx-auto group">
+  <div class="w-full h-full mx-auto bg-sky-700 rounded-lg origin-top-left transition group-hover:rotate-180">
+  </div>
+</div>
+<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 rounded-full animate-pulse"></div>
+<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 animate-spin-slow"></div>
+<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 animate-gempa"></div>
+<div class="container mx-auto">
+  <div class="border shadow-lg p-10 rounded-lg">
+    <img src="../Src/Img/mailchim.jpg" alt="" width="150px" class="float-left mr-6 rounded-lg">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum cumque fuga, nam quasi animi atque dolore sunt recusandae quas est labore expedita eum dignissimos illum fugit obcaecati repellat temporibus natus eos accusamus libero aliquam vel. Eum perspiciatis deleniti minus fuga nostrum, ducimus cupiditate sequi eveniet blanditiis magnam qui, ipsam obcaecati?</p>
+  </div>
+</div>
+<div class="w-10 h-10 bg-purple-700 rounded-full flex fixed bottom-10 right-9 animate-bounce"><a href="#" class="m-auto text-2xl block bg-gradient-to-r from-blue-500 to-teal-300 bg-clip-text text-transparent">⬆️</a></div>
   <div class="mb-96"></div>
   <script>
     const checkbox = document.querySelector('#toggle')
     const html = document.querySelector('html')
-    checkbox.addEventListener('click', function(){
+    checkbox.addEventListener('click', function () {
       checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
     })
   </script>
 </body>
+
 </html>

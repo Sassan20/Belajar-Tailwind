@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -7,21 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belajar Tailwind</title>
   <link rel="stylesheet" href="../Src/Css/style.css">
+  <style type="text/tailwindcss">
+    #toggle:checked ~ label div.circle {
+      @apply translate-x-4;
+    }
+  </style>
 </head>
 
-<body class="font-inter">
-  <h1 class="text-5xl font-bold text-center my-7">
+<body class="font-inter text-slate-700 dark:bg-slate-900 dark:text-slate-200">
+  <div class="mt-10 mr-20 flex justify-end">
+    <span>Light</span>
+    <input type="checkbox" id="toggle" class="hidden">
+    <label for="toggle">
+      <div class="w-10 h-5 bg-slate-600 rounded-full mx-1 mt-0.5 flex items-center p-1 cursor-pointer">
+        <div class="w-4 h-4 bg-slate-300 rounded-full circle"></div>
+      </div>
+    </label>
+    <span>Dark</span>
+  </div>
+  <h1 class="text-5xl font-bold text-center">
     Belajar <br> <span class="bg-gradient-to-r from-blue-500 to-teal-300 bg-clip-text text-transparent">Tailwind</span>
   </h1>
-  <div class="w-1/2 mx-auto text-gray-500">
+  <div class="w-1/2 mx-auto">
     <h1 class="text-3xl font-semibold my-6">Belajar Mengenai Tailwind Bersama Pak Dika </h1>
-    <p>By <a href="#" class="text-black font-semibold underline hover:text-blue-600 cursor-pointer">Muhammad Fadil,</a>
+    <p>By <a href="#" class="text-black font-semibold underline hover:text-blue-600 cursor-pointer dark:text-slate-200">Muhammad Fadil,</a>
       15 Mei 2023</p>
     <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur iste quasi error voluptates esse
       vel ducimus sequi natus placeat, consequuntur ab neque, illum iure possimus autem! Quis ab optio officia repellat
       unde praesentium, atque corrupti necessitatibus? Sed consequatur laudantium, labore culpa eius modi, corporis
       ratione facilis nobis repudiandae sit. Fugiat?</p>
-    <blockquote class="mt-2 italic font-thin">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, et?"
+    <blockquote class="mt-2 italic font-thin text-slate-950 dark:text-slate-200">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, et?"
     </blockquote>
     <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero consequuntur error cupiditate
       eius. Expedita, dolor nemo. Officia fugit dolores, itaque esse maiores ipsa? Doloribus quia soluta dicta neque
@@ -39,10 +54,31 @@
       deleniti deserunt non alias, officiis obcaecati neque asperiores dolores nobis ipsa. Harum deserunt, quae
       sapiente, sunt saepe molestiae dolores dicta dolorem ab molestias nemo quidem aspernatur!</p>
   </div>
-  <div class="w-72 h-60 bg-slate-400 m-auto rounded-lg border-4 bg-cover  border-slate-500 flex" style="background-image: url('../Src/Img/mailchim.jpg');">
+  <div class="w-72 h-60 bg-slate-400 m-auto rounded-lg border-4 bg-cover  border-slate-500 flex"
+    style="background-image: url('../Src/Img/mailchim.jpg');">
     <div class="w-[100px] h-[100px] bg-white/30 m-auto rounded-full backdrop-blur-md"></div>
   </div>
+  <button
+    class="bg-sky-600 my-10 px-5 py-1 rounded-full text-white font-semibold mx-auto block hover:bg-sky-700 active:bg-sky-900 focus:border-2 focus:border-sky-400 dark:bg-slate-600 dark:hover:bg-slate-700 dark:active:bg-slate-800 dark:focus:border-2 dark:focus:border-slate-200">Simpan</button>
+  <div class="max-w-lg border border-slate-200 mx-auto p-5 rounded-xl shadow-md hover:bg-sky-500 dark:hover:bg-slate-300 group">
+    <h5 class="font-bold mb-3 group-hover:text-white dark:group-hover:text-slate-900">My Card</h5>
+    <p class="group-hover:text-white dark:group-hover:text-slate-900 selection:bg-lime-400 selection:text-slate-900 font-serif first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatum veniam fugit repellendus accusamus adipisci sapiente quibusdam iste, ipsa odio architecto ab consequuntur similique, quae mollitia, harum optio accusantium cumque neque cum possimus! Consequatur dolor, laborum reprehenderit praesentium facere accusantium?</p>
+  </div>
+  <div class="max-w-lg border border-slate-200 shadow p-5 mx-auto my-10 rounded-xl">
+    <form action="email">
+      <span class=" font-semibold block mb-1 after:content-['*'] after:text-pink-700 after:ml-0.5">Email</span>
+      <label for="email"></label>
+      <input id="email" placeholder="Masukkan Email..." class="px-3 py-2 border shadow rounded-xl w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer" type="email">
+      <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email Tidak Valid</p>
+    </form>
+  </div>
   <div class="mb-96"></div>
+  <script>
+    const checkbox = document.querySelector('#toggle')
+    const html = document.querySelector('html')
+    checkbox.addEventListener('click', function(){
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+    })
+  </script>
 </body>
-
 </html>

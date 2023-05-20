@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belajar Tailwind</title>
   <link rel="stylesheet" href="../Src/Css/style.css">
-  <style type="text/tailwindcss">
-    #toggle:checked ~ label div.circle {
-      @apply translate-x-4;
-    }
-  </style>
 </head>
 
 <body class="font-inter text-slate-700 dark:bg-slate-900 dark:text-slate-200">
@@ -91,13 +86,27 @@
   </div>
 </div>
 <div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 rounded-full animate-pulse"></div>
-<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 animate-spin-slow"></div>
-<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 animate-gempa"></div>
-<div class="container mx-auto">
+<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 rounded-lg animate-spin-slow"></div>
+<div class="w-[100px] h-[100px] mx-auto bg-sky-700 my-14 rounded-lg animate-gempa"></div>
+<div class="max-w-lg mx-auto">
   <div class="border shadow-lg p-10 rounded-lg">
     <img src="../Src/Img/mailchim.jpg" alt="" width="150px" class="float-left mr-6 rounded-lg">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum cumque fuga, nam quasi animi atque dolore sunt recusandae quas est labore expedita eum dignissimos illum fugit obcaecati repellat temporibus natus eos accusamus libero aliquam vel. Eum perspiciatis deleniti minus fuga nostrum, ducimus cupiditate sequi eveniet blanditiis magnam qui, ipsam obcaecati?</p>
   </div>
+</div>
+<div class="max-w-lg my-32 border p-8 shadow-md mx-auto rounded-md relative">
+  <div class="w-8 h-8 bg-pink-300 flex rounded-full absolute -top-4 -right-4"><span class="m-auto">❌</span></div>
+  <div class="border p-8 rounded-md">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellat dicta molestias alias itaque, totam quae quibusdam ullam repudiandae magnam? Sit officia unde voluptatum commodi aliquid asperiores tempore illo aliquam aut? Quam adipisci nulla nisi voluptate corrupti illum eligendi deserunt accusamus esse tempora. Consequuntur, esse. Maiores non quae quas quo.</p>
+  </div>
+</div>
+<div class="container border shadow-md p-8 mx-auto rounded-lg columns-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
+  <img src="../Src/Img/mailchim.jpg" alt="" class="pb-3">
 </div>
 <div class="w-10 h-10 bg-purple-700 rounded-full flex fixed bottom-10 right-9 animate-bounce"><a href="#" class="m-auto text-2xl block bg-gradient-to-r from-blue-500 to-teal-300 bg-clip-text text-transparent">⬆️</a></div>
   <div class="mb-96"></div>
